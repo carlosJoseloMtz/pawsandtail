@@ -78,6 +78,10 @@ footer p a {
     color: #777;
 }
 
+
+/*
+    FIXME: add proper look to sandwich button because it just looks ugly!
+*/
 .sandwich-button {
     display:none;
     font-weight: bold;
@@ -101,12 +105,26 @@ footer p a {
         width: 100%;
     }
 
+    .top-nav-section {
+        margin: 0;
+    }
+
     .top-nav-section .top-nav {
-        height: 40px;
+        height:auto;
     }
 
     .top-nav-section .top-nav ul {
         display:none;
+        list-style: none;
+    }
+
+    /* little fix for showing and hiding menu from small size to max resize */
+    .top-nav-section .top-nav .shown {
+        display:block;
+    }
+
+    .top-nav-section .top-nav ul li {
+        float:none;
     }
 
     .content .actual-content {
@@ -121,14 +139,24 @@ footer p a {
 
 
     .sandwich-button {
+        border: 2px solid;
+        border-radius: 25px;
         display:block;
+        margin: 0 45% 0 45%;
+        width: 10%;
+    }
+
+    .sandwich-button:hover {
+        background-color: #B564A0;
     }
 }
 
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    .top-nav-section .top-nav ul {
+        display: inline-block;
+    }
 }
 
 
