@@ -7,14 +7,44 @@
     <title>Patitas y Colitas - {% block title %} {% endblock title %}</title>
     <!-- load some cool font instead of some static boring one -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    {% block cssimport %} {% endblock cssimport %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" />
+    {% block anyheadimport %} {% endblock anyheadimport %}
 </head>
 <body>
 
-{% block content %} {% endblock content %}
+<div class="top-nav-section">
+    <div class="banner">
+        <img src="#" />
+    </div>
+    <div class="top-nav">
+        <div class="sandwich-button">=</div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Comida</a></li>
+            <li><a href="#">¿Quiénes somos?</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Entrar</a></li>
+        </ul>
+    </div>
+</div>
 
-{% block scriptimport %} {% endblock scriptimport %}
 
+<div class="content">
+    <div class="nav-content">
+        <h1>Asociados</h1>
+        <ul>
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Some link</a></li>
+            <li><a href="#">Some link</a></li>
+        </ul>
+    </div>
+    <div class="actual-content">
+        {% block content %} {% endblock content %}
+
+        {% block scriptimport %} {% endblock scriptimport %}
+    </div>
+</div>
 <footer>
     <p>Sitio diseñado, implementado y mantenido por <strong>WhateverOurNameIs</strong>.</p>
     <p>Para conocer más al respecto, contacta al equipo <a href="mailto:contacto@nosotroswey.com">Us</a></p>

@@ -1,3 +1,144 @@
 body {
-    background-color: black;
+    margin: 1% 0 0 0;
+    font-family: 'Quicksand';
+}
+
+
+.top-nav-section {
+    width: 100%;
+    margin: 0 0 3% 0;
+}
+
+.top-nav-section .banner img {
+    width: 80%;
+    margin-left: 10%;
+    height: 250px;
+}
+
+.top-nav-section .top-nav {
+    width: 100%;
+    background-color: #B564E3;
+    height: 50px;
+    padding-top: 8px;
+}
+
+.top-nav-section .top-nav ul li {
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.content {
+    height: auto;
+    width: 100%;
+}
+
+.content .nav-content {
+    text-align: center;
+    margin-left: 5%;
+    width: 300px;
+    background-color: darkgray;
+    display: inline-block;
+    background-color: #c2e3d5;
+}
+
+.content .nav-content ul {
+    padding-left: 0;
+}
+
+.content .nav-content ul li {
+    list-style: none;
+}
+
+.content .actual-content {
+    margin-left: 1%;
+    height: auto;
+    display: inline-block;
+    text-align: justify;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    margin-top: 3%;
+    padding: 10px 10px 10px 10px;
+    color: #777;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+footer p a {
+    color: #777;
+}
+
+.sandwich-button {
+    display:none;
+    font-weight: bold;
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+
+}
+
+/*
+    TODO: implement responsive support for components above
+*/
+
+
+/* Extra-small devices (phones, < 768px) */
+@media (max-width: 768px) {
+    .content .nav-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .top-nav-section .top-nav {
+        height: 40px;
+    }
+
+    .top-nav-section .top-nav ul {
+        display:none;
+    }
+
+    .content .actual-content {
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+
+    /* TODO: customize sandwich button and add action to it */
+
+
+    .sandwich-button {
+        display:block;
+    }
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
