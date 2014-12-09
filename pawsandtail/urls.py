@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
+from pawsapp import views
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -10,4 +11,8 @@ urlpatterns = patterns('',
 
     # uncomment next line to integrate django out of the box admin tool
     # url(r'^admin/', include(admin.site.urls)),
+
+    url(r'^$', views.homepage),
+
+    # add all needed request mapping here
 )

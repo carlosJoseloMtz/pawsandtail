@@ -1,0 +1,23 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Patitas y Colitas - {% block title %} {% endblock title %}</title>
+    <!-- load some cool font instead of some static boring one -->
+    <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    {% block cssimport %} {% endblock cssimport %}
+</head>
+<body>
+
+{% block content %} {% endblock content %}
+
+{% block scriptimport %} {% endblock scriptimport %}
+
+<footer>
+    <p>Sitio diseñado, implementado y mantenido por <strong>WhateverOurNameIs</strong>.</p>
+    <p>Para conocer más al respecto, contacta al equipo <a href="mailto:contacto@nosotroswey.com">Us</a></p>
+</footer>
+</body>
+</html>
