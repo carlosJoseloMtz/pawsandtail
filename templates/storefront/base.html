@@ -2,55 +2,52 @@
 <!DOCTYPE html>
 <html>
 <head lang="es">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Patitas y Colitas - {% block title %} {% endblock title %}</title>
     <!-- load some cool font instead of some static boring one -->
     <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/jumbotron-narrow.css"/>
     {% block anyheadimport %} {% endblock anyheadimport %}
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 
-<div class="top-nav-section">
-    <div class="banner">
-        <img src="#" />
+<div class="container">
+    <div class="header">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" class="active"><a href="#">Inicio</a></li>
+                <li role="presentation"><a href="#">Comida</a></li>
+                <li role="presentation"><a href="#">¿Quiénes somos?</a></li>
+                <li role="presentation"><a href="#">Contacto</a></li>
+                <li role="presentation"><a href="#">Entrar</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Patitas y Colitas</h3>
     </div>
-    <div class="top-nav">
-        <div class="sandwich-button">=</div>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Comida</a></li>
-            <li><a href="#">¿Quiénes somos?</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Entrar</a></li>
-        </ul>
-    </div>
+
+    {% block content %}
+    {% endblock content %}
+
+    <footer class="footer">
+        <p>&copy; 2014, Sitio diseñado, implementado y mantenido por <strong>WhateverOurNameIs</strong>.</p>
+
+        <p>Para conocer más al respecto, contacta al equipo <a href="mailto:contacto@nosotroswey.com">Us</a></p>
+    </footer>
+
 </div>
+<!-- /container -->
 
-
-<div class="content">
-    <div class="nav-content">
-        <h1>Asociados</h1>
-        <ul>
-            <li><a href="#">Some link</a></li>
-            <li><a href="#">Some link</a></li>
-            <li><a href="#">Some link</a></li>
-            <li><a href="#">Some link</a></li>
-        </ul>
-    </div>
-    <div class="actual-content">
-        {% block content %} {% endblock content %}
-
-        {% block scriptimport %} {% endblock scriptimport %}
-    </div>
-</div>
-<footer>
-    <p>Sitio diseñado, implementado y mantenido por <strong>WhateverOurNameIs</strong>.</p>
-    <p>Para conocer más al respecto, contacta al equipo <a href="mailto:contacto@nosotroswey.com">Us</a></p>
-</footer>
 <!-- load scripts at the bottom  so it'll look like loading faster -->
 <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
-<script src="{{ STATIC_URL }}js/sandwich.js"></script>
+{% block scriptimport %}
+{% endblock scriptimport %}
 </body>
 </html>
