@@ -2,26 +2,47 @@
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #EFE4C2;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
+/*
+  TODO: refactor header stuff for small devices according to customization.
+*/
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid white;
 }
+
+hr {
+  color: white;
+  background-color: white;
+}
+
+
+.header nav {
+  padding-top:100px;
+}
+
+.header nav ul li {
+  background-color:white;
+  border-radius: 0;
+}
+
+.header nav ul li .active {
+  border-radius: 0;
+}
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   padding-bottom: 19px;
-  margin-top: 0;
+  margin-top: -110px;
   margin-bottom: 0;
   line-height: 40px;
+}
+
+.header h3 img {
+  width: 300px;
+  height: 150px;
 }
 
 /* Custom page footer */
@@ -76,4 +97,55 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+
+/*
+  deeper customization
+  TODO: place following code in another file! looks pretty ugly here (just for the name of the file xD)
+*/
+
+/* TODO: make sure that images managed in site will not be bigger than this size to avoid unnecessary loading */
+/* set carousel images a simple static image */
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-size: x-large;
+}
+
+.ad-like-message {
+  background-color: white;
+  text-align: center;
+  color: #357299;
+}
+
+.ad-like-message p, .ad-like-message a, .ad-like-message a:visited {
+  color: #8EB378;
+  text-decoration: none;
+}
+
+.ad-like-message.globe {
+  background-color: #357299;
+  color: white;
+  text-decoration: none;
+}
+
+.ad-like-message.globe p,
+ .ad-like-message.globe a,
+ .ad-like-message.globe a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  border-top-color: white;
+  max-width: 100%;
+  border-width: medium;
+}
+
+.body-container {
+  max-width: 980px;
 }

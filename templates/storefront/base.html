@@ -19,7 +19,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container body-container">
     <div class="header">
         <nav>
             <ul class="nav nav-pills pull-right">
@@ -30,16 +30,35 @@
                 <li role="presentation"><a href="#">Entrar</a></li>
             </ul>
         </nav>
-        <h3 class="text-muted">Patitas y Colitas</h3>
+        <h3 class="text-muted"><img src=""></h3>
     </div>
 
     {% block content %}
     {% endblock content %}
 
     <footer class="footer">
-        <p>&copy; 2014, Sitio diseñado, implementado y mantenido por <strong>WhateverOurNameIs</strong>.</p>
-
-        <p>Para conocer más al respecto, contacta al equipo <a href="mailto:contacto@nosotroswey.com">Us</a></p>
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>Horarios</h3>
+                <h5>Lunes a viernes</h5>
+                <h5>9am-6pm</h5>
+                <h5>Sábados y Domingos</h5>
+                <h5>10am-4pm</h5>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-lg-3">
+                <h3>Locación</h3>
+                <h5>Algún lugar en el D.F.</h5>
+                <h5>info@patitasycolitas.com</h5>
+                <h5>T: (55) 123-123-123</h5>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-lg-3">
+                <h3>Encuéntranos</h3>
+                <img src="#" width="100%" height="100px">
+            </div>
+        </div>
+        <br/>
     </footer>
 
 </div>
@@ -47,6 +66,7 @@
 
 <!-- load scripts at the bottom  so it'll look like loading faster -->
 <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
+<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
 {% block scriptimport %}
 {% endblock scriptimport %}
 </body>
