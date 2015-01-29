@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Nosotros</title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+{% extends 'storefront/base.html' %}
+{% block title %} ¡Bienvenido! {% endblock title %}
+{% block content %}
 
-		<!-- For styles in mobile (Bootstrap) -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>			
 			/*Estilos especificos galeria*/
 			.thumbnail{
@@ -21,8 +15,7 @@
 
             }
         </script>
-	</head>
-	<body>
+
 
 		<!-- Galeria > ExploradorImagenes -->
         <h1>Galeria:</h1>
@@ -38,5 +31,9 @@
 			</div>
             <button type="button" class="col-lg-5 btn-primary">Cargar mas...</button>
 		</div>
-	</body>
-</html>
+
+{% endblock content %}
+
+{% block scriptimport %}
+    <script src="{{ STATIC_URL }}js/home.js" ></script>
+{% endblock scriptimport %}

@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 
     url(r'^$', views.homepage),
+    url(r'^nosotros/$', views.nosotros),
 
     # add all needed request mapping here
 )

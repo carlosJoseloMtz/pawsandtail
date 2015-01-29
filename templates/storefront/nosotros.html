@@ -1,51 +1,103 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Nosotros</title>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>  
-		<!-- For styles in mobile (Bootstrap) -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends 'storefront/base.html' %}
+{% block title %} ¡Bienvenido! {% endblock title %}
+    {% block content %}
+
 		<style>			
 			/*Estilos estandar*/
 			.Ficha .imagen{
 				border-style: solid;
 				border-width: 2px;
-				border-color: blue;
+				border-color: #eee;
+                border-radius:20px;
 			}
 			/*Estilos especificos "Nosotros"*/
+
+
 			.imagen_nosotros{
-				content:url("http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg");				
+                content:url("http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg");
 			}
+
+
+            .imagen{
+                -webkit-animation: imagen_init 1s; /* Chrome, Safari, Opera */
+                animation: imagen_init 1s;
+            }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes imagen_init{
+                from {opacity: 0.0;}
+                to {opacity: 1.0;}
+            }
+
+            @keyframes imagen_init {
+                from {opacity: 0.0; rotateY(0deg);}
+                to {opacity: 1.0; rotateY(180deg);}
+            }
+
+            .Paginador{
+                cursor:pointer;
+                background-image:url("../../static/img/Paginador_SVG.svg");
+                color:#eee;
+                -webkit-animation: Paginador_init 1s; /* Chrome, Safari, Opera */
+                animation: Paginador_init 1s;
+                background-size:cover;
+                background-repeat:round;
+            }
+            .Paginador:hover{
+                background-image:url("../../static/img/Paginador_SVG_hover.svg");
+                color:black;
+            }
+
+            .Paginador p{
+                text-align:center;
+                font-size:36px;
+            }
+            .Paginador span{
+                vertical-align:middle;
+            }
+
+             /* Chrome, Safari, Opera */
+            @-webkit-keyframes Paginador_init{
+                0% { -webkit-transform: rotateY(90deg); }
+            }
+
+            @keyframes Paginador_init {
+                0% { -webkit-transform: rotateY(90deg); transform:rotateY(90deg); }
+            }
+
+
+
 		</style>
-	</head>
-	<body>
+
+
 
 		<!-- Ficha "Nosotros" -->	
-		<div class="row Ficha">			
+		<div class="row Ficha">
 			<!-- Grupo1 -->
-			<div class="col-sm-4">				
+			<div class="col-lg-6">
 				<h1 class="Ficha titulo">Titulo de la ficha</h1><!-- Ficha "Nosotros"> Titulo -->								
 				<p class="Ficha descripcion">Descripcion de la ficha</p><!-- Ficha "Nosotros"> Descripcion -->
 			</div>
 			<!-- Grupo2 -->
-			<div class="col-sm-4">
-					<img class="Ficha imagen imagen_nosotros"><!-- Ficha "Nosotros"> Imagen -->					
+			<div class="col-lg-6">
+                    <div class="row">
+					    <img src="http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg" class="img-responsive center-block Ficha imagen"><!-- Ficha "Nosotros"> Imagen -->
+                    </div>
 					<!-- Ficha "Nosotros"> Paginadores -->
-					<div class="col-sm-3 Paginador"><!-- Ficha "Nosotros"> Paginadores> Paginador "Mision"-->
-							<h1 class="Paginador titulo">Mision</h1><!-- Ficha "Nosotros"> Titulo -->								
-							<p class="Paginador descripcion">Descripcion de la ficha.</p><!-- Ficha "Nosotros"> Descripcion -->
-					</div>								
-					<div class="col-sm-3 Paginador"><!-- Ficha "Nosotros"> Paginadores> Paginador "Vision"-->
-							<h1 class="Paginador titulo">Vision</h1><!-- Ficha "Nosotros"> Titulo -->								
-							<p class="Paginador descripcion">Descripcion de la ficha.</p><!-- Ficha "Nosotros"> Descripcion -->
-					</div>								
-					<div class="col-sm-3 Paginador"><!-- Ficha "Nosotros"> Paginadores> Paginador "Filosofia"-->
-							<h1 class="Paginador titulo">Filosofia</h1><!-- Ficha "Nosotros"> Titulo -->								
-							<p class="Paginador descripcion">Descripcion de la ficha.</p><!-- Ficha "Nosotros"> Descripcion -->
-					</div>								
-			</div>	
+                    <div class="row">
+                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Mision"-->
+                                <p class="titulo"><span>Mision</span></p><!-- Ficha "Nosotros"> Titulo -->
+                        </div>
+                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Vision"-->
+                                <p class="titulo"><span>Vision</span></p><!-- Ficha "Nosotros"> Titulo -->
+                        </div>
+                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Filosofia"-->
+                                <p class="titulo"><span>Filosofia</span></p><!-- Ficha "Nosotros"> Titulo -->
+                        </div>
+                    </div>
+			</div>
 		</div>
-	</body>
-</html>
+
+    {% endblock content %}
+{% block scriptimport %}
+{% endblock scriptimport %}
