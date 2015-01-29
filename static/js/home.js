@@ -1,6 +1,3 @@
-// declare the object
-var PAWS = PAWS || {};
-
 PAWS.home = {
 
     bindAll: function() {
