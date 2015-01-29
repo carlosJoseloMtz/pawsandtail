@@ -1,0 +1,62 @@
+			/*Estilos estandar*/
+			.Ficha .imagen{
+				border-style: solid;
+				border-width: 2px;
+				border-color: #eee;
+                border-radius:20px;
+			}
+			/*Estilos especificos "Nosotros"*/
+
+
+			.imagen_nosotros{
+                content:url("http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg");
+			}
+
+
+            .imagen{
+                -webkit-animation: imagen_init 1s; /* Chrome, Safari, Opera */
+                animation: imagen_init 1s;
+            }
+
+            /* Chrome, Safari, Opera */
+            @-webkit-keyframes imagen_init{
+                from {opacity: 0.0;}
+                to {opacity: 1.0;}
+            }
+
+            @keyframes imagen_init {
+                from {opacity: 0.0; rotateY(0deg);}
+                to {opacity: 1.0; rotateY(180deg);}
+            }
+
+            .Paginador{
+                cursor:pointer;
+                background-image:url("../../static/img/Paginador_SVG.svg");
+                color:#eee;
+                -webkit-animation: Paginador_init 1s; /* Chrome, Safari, Opera */
+                animation: Paginador_init 1s;
+                background-size:cover;
+                background-repeat:round;
+            }
+            .Paginador:hover{
+                background-image:url("../../static/img/Paginador_SVG_hover.svg");
+                color:black;
+            }
+
+            .Paginador p{
+                text-align:center;
+                font-size:36px;
+            }
+            .Paginador span{
+                vertical-align:middle;
+            }
+
+             /* Chrome, Safari, Opera */
+            @-webkit-keyframes Paginador_init{
+                0% { -webkit-transform: rotateY(90deg); }
+            }
+
+            @keyframes Paginador_init {
+                0% { -webkit-transform: rotateY(90deg); transform:rotateY(90deg); }
+            }
+
