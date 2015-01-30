@@ -10,30 +10,28 @@
 				border-color: grey;
 			}
 		</style>
-        <script>
-            function previewImage(url){
-
-            }
-        </script>
-
-
 		<!-- Galeria > ExploradorImagenes -->
         <h1>Galeria:</h1>
 		<div class="row">
 			<div class="col-lg-3">
-                     <img onclick="alert('test!!');" src="http://cdn.20minutos.es/img2/recortes/2014/02/14/159863-240-180.jpg" alt="Pulpit Rock" class="thumbnail">
+                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_1.jpg');" src="../../static/img/ImagenesPrueba/240_180_1.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <div class="col-lg-3">
-                     <img onclick="alert('test!!');" src="http://cdn.20minutos.es/img2/recortes/2014/02/14/159863-240-180.jpg" alt="Pulpit Rock" class="thumbnail">
+                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_2.jpg');" src="../../static/img/ImagenesPrueba/240_180_2.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <div class="col-lg-3">
-                     <img onclick="alert('test!!');" src="http://cdn.20minutos.es/img2/recortes/2014/02/14/159863-240-180.jpg" alt="Pulpit Rock" class="thumbnail">
+                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_3.jpg');" src="../../static/img/ImagenesPrueba/240_180_3.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <button type="button" class="col-lg-5 btn-primary">Cargar mas...</button>
 		</div>
 
+        <!-- Image dialog -->
+        <div id="dialog" title="An Image!" style="display: none;">
+            <img id="image" src=""/>
+        </div>
 {% endblock content %}
 
 {% block scriptimport %}
     <script src="{{ STATIC_URL }}js/home.js" ></script>
+    <script src="{{ STATIC_URL }}js/gallerycontroller.js" ></script>
 {% endblock scriptimport %}

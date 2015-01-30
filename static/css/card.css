@@ -10,7 +10,9 @@
 			    word-wrap: break-word;
 			}
 
-            .Paginador{
+            /*Estilos paginador*/
+            /*Paginador_Azul*/
+            .Paginador_Azul{
                 cursor:pointer;
                 background-image:url("../../static/img/Paginador_SVG.svg");
                 color:#eee;
@@ -19,11 +21,28 @@
                 background-size:cover;
                 background-repeat:round;
             }
-            .Paginador:hover{
+            .Paginador_Azul:hover{
                 background-image:url("../../static/img/Paginador_SVG_hover.svg");
                 color:black;
             }
 
+            /*Paginador_Blanco*/
+            .Paginador_Blanco{
+                cursor:pointer;
+                background-image:url("../../static/img/Paginador_SVG_hover.svg");
+                color:black;
+                -webkit-animation: Paginador_init 1s; /* Chrome, Safari, Opera */
+                animation: Paginador_init 1s;
+                background-size:cover;
+                background-repeat:round;
+            }
+            .Paginador_Blanco:hover{
+                background-image:url("../../static/img/Paginador_SVG.svg");
+                color:#eee;
+            }
+
+
+            /*Estilos generales para Paginador*/
             .Paginador .titulo{
                 text-align:center;
                 font-size:36px;
@@ -31,6 +50,7 @@
             .Paginador .titulo span{
                 vertical-align:middle;
             }
+
 
              /* Chrome, Safari, Opera */
             @-webkit-keyframes Paginador_init{

@@ -6,3 +6,6 @@ def homepage(request):
 
 def nosotros(request):
     return render(request, 'storefront/nosotros.html')
+
+def galeria(request):
+    return render(request, 'storefront/galeria.html')

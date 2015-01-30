@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 
     url(r'^$', views.homepage),
     url(r'^nosotros/$', views.nosotros),
+     url(r'^galeria/$', views.galeria),
 
     # add all needed request mapping here
 )
