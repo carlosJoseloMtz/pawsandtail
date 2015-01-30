@@ -1,8 +1,10 @@
-<svg width="94" height="47" xmlns="http://www.w3.org/2000/svg">
+<svg width="229" height="195" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
- <title>titulo</title>
  <g>
   <title>Layer 1</title>
-  <path fill="#eee" stroke="#003f7f" stroke-width="3" stroke-linejoin="null" stroke-linecap="null" d="m2.80004,2.76667l89.69995,-0.26667l0,32.8l-44.99999,8c-15.3,-2.66667 -29.7,-5.33332 -45,-8l0.30004,-32.53333z" id="svg_3" opacity="0.85"/>
+  <g id="svg_3">
+   <rect id="svg_1" height="189" width="229" y="0" x="0" stroke-width="0" stroke="#000000" fill="#FFFFFF"/>
+   <path id="svg_2" d="m103.20001,181.40002l10.79999,13.59998l10,-14l-20.79999,0.40002z" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#FFFFFF"/>
+  </g>
  </g>
 </svg>

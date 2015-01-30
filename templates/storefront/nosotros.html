@@ -1,7 +1,7 @@
 {% extends 'storefront/base.html' %}
 {% block title %} Nosotros {% endblock title %}
 {% block anyheadimport %}
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/nosotros.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/card.css"/>
 {% endblock anyheadimport %}
     {% block content %}
 
@@ -11,29 +11,32 @@
 		<div class="row Ficha">
 			<!-- Grupo1 -->
 			<div class="col-lg-6">
-				<h1 class="Ficha titulo">Titulo de la ficha</h1><!-- Ficha "Nosotros"> Titulo -->								
-				<p class="Ficha descripcion">Descripcion de la ficha</p><!-- Ficha "Nosotros"> Descripcion -->
+				<h1 id="FichaNosotros_Titulo" class="Ficha titulo"></h1><!-- Ficha "Nosotros"> Titulo -->
+				<p id="FichaNosotros_Texto" class="Ficha descripcion"></p><!-- Ficha "Nosotros"> Descripcion -->
 			</div>
 			<!-- Grupo2 -->
 			<div class="col-lg-6">
                     <div class="row">
-					    <img src="http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg" class="img-responsive center-block Ficha imagen"><!-- Ficha "Nosotros"> Imagen -->
+					    <img id="FichaNosotros_Imagen" src="http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg" class="img-responsive center-block Ficha imagen"><!-- Ficha "Nosotros"> Imagen -->
                     </div>
 					<!-- Ficha "Nosotros"> Paginadores -->
                     <div class="row">
-                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Mision"-->
+                        <div class="col-lg-4 Paginador" onclick="showJSONInCard(JSON_FILE_NOSOTROS,'Mision','FichaNosotros');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Mision"-->
                                 <p class="titulo"><span>Mision</span></p><!-- Ficha "Nosotros"> Titulo -->
                         </div>
-                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Vision"-->
+                        <div class="col-lg-4 Paginador" onclick="showJSONInCard(JSON_FILE_NOSOTROS,'Vision','FichaNosotros');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Vision"-->
                                 <p class="titulo"><span>Vision</span></p><!-- Ficha "Nosotros"> Titulo -->
                         </div>
-                        <div class="col-lg-4 Paginador" onclick="alert('mostrar contenido ficha');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Filosofia"-->
+                        <div class="col-lg-4 Paginador" onclick="showJSONInCard(JSON_FILE_NOSOTROS,'Filosofia','FichaNosotros');"><!-- Ficha "Nosotros"> Paginadores> Paginador "Filosofia"-->
                                 <p class="titulo"><span>Filosofia</span></p><!-- Ficha "Nosotros"> Titulo -->
                         </div>
                     </div>
 			</div>
 		</div>
-
     {% endblock content %}
 {% block scriptimport %}
+<script src="{{ STATIC_URL }}js/cardcontroller.js"></script>
+<script>
+   showJSONInCard(JSON_FILE_NOSOTROS,'Mision','FichaNosotros');
+</script>
 {% endblock scriptimport %}

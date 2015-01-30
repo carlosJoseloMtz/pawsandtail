@@ -1,15 +1,22 @@
-{"Nosotros":[
-    {"Mision"="Mision",
-      "imagen"="http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg",
-      "texto"="Nuestra mision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+{
+  "ROOT": [
+    {
+      "apartado": "Mision",
+      "titulo":"Mision",
+      "imagen": "../../static/img/ImagenesPrueba/500_375_1.jpg",
+      "texto": "Nuestra mision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     },
-    {"Vision"="Vision",
-      "imagen"="http://www.public-domain-photos.com/free-stock-photos-4-big/travel/yosemite/yosemite-meadows.jpg",
-      "texto"="Nuestra vision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    }
-    {"Filosofia"="Filosofia",
-      "imagen"="http://magdeleine.co/wp-content/uploads/2015/01/0f4925e0-500x375.jpeg",
-      "texto"="Nuestra filosofia es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    {
+      "apartado": "Vision",
+      "titulo":"Vision",
+      "imagen": "../../static/img/ImagenesPrueba/500_375_2.jpg",
+      "texto": "Nuestra Vision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "apartado": "Filosofia",
+      "titulo":"Filosofia",
+       "imagen": "../../static/img/ImagenesPrueba/500_375_3.jpeg",
+      "texto": "Nuestra Filosofia es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     }
   ]
 }

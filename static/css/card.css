@@ -1,33 +1,14 @@
-			/*Estilos estandar*/
+			/*Estilos Ficha*/
 			.Ficha .imagen{
 				border-style: solid;
 				border-width: 2px;
 				border-color: #eee;
                 border-radius:20px;
 			}
-			/*Estilos especificos "Nosotros"*/
 
-
-			.imagen_nosotros{
-                content:url("http://www.smashingmagazine.com/images/pictures-photos/photos-26.jpg");
+			.Ficha .descripcion{
+			    word-wrap: break-word;
 			}
-
-
-            .imagen{
-                -webkit-animation: imagen_init 1s; /* Chrome, Safari, Opera */
-                animation: imagen_init 1s;
-            }
-
-            /* Chrome, Safari, Opera */
-            @-webkit-keyframes imagen_init{
-                from {opacity: 0.0;}
-                to {opacity: 1.0;}
-            }
-
-            @keyframes imagen_init {
-                from {opacity: 0.0; rotateY(0deg);}
-                to {opacity: 1.0; rotateY(180deg);}
-            }
 
             .Paginador{
                 cursor:pointer;
@@ -43,11 +24,11 @@
                 color:black;
             }
 
-            .Paginador p{
+            .Paginador .titulo{
                 text-align:center;
                 font-size:36px;
             }
-            .Paginador span{
+            .Paginador .titulo span{
                 vertical-align:middle;
             }
 

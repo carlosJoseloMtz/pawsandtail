@@ -149,3 +149,20 @@ hr {
 .body-container {
   max-width: 980px;
 }
+
+/*Estilos Estandar*/
+.imagen{
+    -webkit-animation: imagen_init 1s; /* Chrome, Safari, Opera */
+    animation: imagen_init 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes imagen_init{
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+@keyframes imagen_init {
+    from {opacity: 0.0; rotateY(0deg);}
+    to {opacity: 1.0; rotateY(180deg);}
+}
