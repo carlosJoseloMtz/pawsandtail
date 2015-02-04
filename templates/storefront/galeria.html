@@ -14,24 +14,57 @@
         <h1>Galeria:</h1>
 		<div class="row">
 			<div class="col-lg-3">
-                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_1.jpg');" src="../../static/img/ImagenesPrueba/240_180_1.jpg" alt="Pulpit Rock" class="thumbnail imagen">
+                     <img id="Image1" onclick="previewImage(event);" src="../../static/img/ImagenesPrueba/240_180_1.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <div class="col-lg-3">
-                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_2.jpg');" src="../../static/img/ImagenesPrueba/240_180_2.jpg" alt="Pulpit Rock" class="thumbnail imagen">
+                     <img id="Image2" onclick="previewImage(event);" src="../../static/img/ImagenesPrueba/240_180_2.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <div class="col-lg-3">
-                     <img onclick="previewImage('../../static/img/ImagenesPrueba/1024_768_3.jpg');" src="../../static/img/ImagenesPrueba/240_180_3.jpg" alt="Pulpit Rock" class="thumbnail imagen">
+                     <img id="Image3" onclick="previewImage(event);" src="../../static/img/ImagenesPrueba/240_180_3.jpg" alt="Pulpit Rock" class="thumbnail imagen">
 			</div>
             <button type="button" class="col-lg-5 btn-primary">Cargar mas...</button>
 		</div>
 
         <!-- Image dialog -->
-        <div id="dialog" title="An Image!" style="display: none;">
-            <img id="image" src=""/>
+        <div id="myModal" class="row modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" >×</button>
+                <h3 id="myModalLabel">Imagenr</h3>
+            </div>
+            <div class="modal-body col-lg-12">
+
+               <div id="modalCarousel" class="carousel">
+                  <div class="carousel-inner">
+                      <img id="carouselimage" current_image="xxx" src="../../static/img/ImagenesPrueba/1024_768_3.jpg" alt="Pulpit Rock" class="img-responsive center-block">
+                  </div>
+                  <a id="image_show_prev" class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                  <a id="image_show_next" class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+
+            </div>
         </div>
 {% endblock content %}
 
 {% block scriptimport %}
     <script src="{{ STATIC_URL }}js/home.js" ></script>
     <script src="{{ STATIC_URL }}js/gallerycontroller.js" ></script>
+    <script>
+        $("#modalCarousel").click("slid",function(event){
+            var image_selected=event.target.getAttribute('data-slide');
+            var current_image_index=   $('#carouselimage').attr("current_image").substring(4,5);
+            if(image_selected=="prev"){
+                if($("#Image"+current_image_index--)!=undefined){
+                    $('#carouselimage').attr("src",$("#Image"+current_image_index).attr(""));
+                }
+            }
+            if(image_selected=="next"){
+                if($("#Image"+current_image_index++)!=undefined){
+                    $('#carouselimage').attr("src","Image"+current_image_index);
+                }
+            }
+        });
+    </script>
 {% endblock scriptimport %}

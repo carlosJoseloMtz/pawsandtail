@@ -3,8 +3,8 @@
  <g>
   <title>Layer 1</title>
   <g id="svg_3">
-   <rect fill="#3572A3" stroke="#000000" stroke-width="0" x="0" y="0" width="229" height="189" id="svg_1"/>
-   <path fill="#3572A3" stroke="#000000" stroke-width="0" stroke-linejoin="null" stroke-linecap="null" d="m103.20001,181.40002l10.79999,13.59998l10,-14l-20.79999,0.40002z" id="svg_2"/>
+   <rect ry="22" rx="22" id="svg_1" height="189" width="229" y="-2" x="0" stroke-width="0" stroke="#000000" fill="#3572A3"/>
+   <path id="svg_2" d="m103.20001,179.40002l10.79999,13.59998l10,-14l-20.79999,0.40002z" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" stroke="#000000" fill="#3572A3"/>
   </g>
  </g>
 </svg>
