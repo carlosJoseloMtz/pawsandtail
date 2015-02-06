@@ -18,24 +18,23 @@ function showJSONInCard(jsonfile,object,htmlelementprefix){
      }else{//The jsondata has been already loaded
         fillCardWithJSONData(JSON_FILES_LOADED[jsonfile],object,htmlelementprefix);
      }
-
 }
 
 /*This function fill the card based in the "htmlelementprefix" with the specific json "data"*/
 function fillCardWithJSONData(data,object,htmlelementprefix){
     var objectselected=null;
     for(var i=0;i<data.ROOT.length;i++){
-        if(data.ROOT[i].apartado==object){
+        if(data.ROOT[i].apartado.value==object){
             objectselected=data.ROOT[i];
             break;
         }
     }
     if(objectselected!=null){//Fill all the containers with the data:
         //Imagen:
-        $("#"+htmlelementprefix+"_Imagen").attr("src",objectselected.imagen);
+        $("#"+htmlelementprefix+"_Imagen").attr("src",objectselected.imagen.value);
         //Titulo:
-         $("#"+htmlelementprefix+"_Titulo").html(objectselected.titulo);
+         $("#"+htmlelementprefix+"_Titulo").html(objectselected.titulo.value);
         //Texto:
-        $("#"+htmlelementprefix+"_Texto").html(objectselected.texto);
+        $("#"+htmlelementprefix+"_Texto").html(objectselected.texto.value);
     }
 }

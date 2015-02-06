@@ -1,3 +1,4 @@
+/*Tomás Martínez Arenas*/
 /*This is the controller for the gallery, it has all the functions used in the "galeria" page.*/
 
 //This function opens an image in a dialog using bootstrap modal.

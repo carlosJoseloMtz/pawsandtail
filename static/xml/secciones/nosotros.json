@@ -1,22 +1,22 @@
 {
   "ROOT": [
     {
-      "apartado": "Mision",
-      "titulo":"Mision",
-      "imagen": "../../static/img/ImagenesPrueba/500_375_1.jpg",
-      "texto": "Nuestra mision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "apartado":{"value":"Mision","type":"text"},
+      "titulo":{"value":"Mision","type":"text"},
+      "imagen": {"value":"../../static/img/ImagenesPrueba/500_375_1.jpg","type":"image"},
+      "texto": {"value":"Nuestra mision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","type":"text"}
     },
     {
-      "apartado": "Vision",
-      "titulo":"Vision",
-      "imagen": "../../static/img/ImagenesPrueba/500_375_2.jpg",
-      "texto": "Nuestra Vision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "apartado":{"value":"Vision","type":"text"},
+      "titulo":{"value":"Vision","type":"text"},
+      "imagen": {"value":"../../static/img/ImagenesPrueba/500_375_2.jpg","type":"image"},
+      "texto": {"value":"Nuestra Vision es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","type":"text"}
     },
     {
-      "apartado": "Filosofia",
-      "titulo":"Filosofia",
-       "imagen": "../../static/img/ImagenesPrueba/500_375_3.jpeg",
-      "texto": "Nuestra Filosofia es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      "apartado":{"value":"Filosofia","type":"text"},
+      "titulo":{"value":"Filosofia","type":"text"},
+      "imagen": {"value":"../../static/img/ImagenesPrueba/500_375_3.jpeg","type":"image"},
+      "texto": {"value":"Nuestra Filosofia es: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx","type":"text"}
     }
   ]
 }

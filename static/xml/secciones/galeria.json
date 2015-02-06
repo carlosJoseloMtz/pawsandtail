@@ -1,7 +1,7 @@
 {
   "ROOT": [
     {
-      "imagenesporgrupo": "3"
+      "imagenesporgrupo":{"value": "3","type":"number"}
     }
   ]
 }

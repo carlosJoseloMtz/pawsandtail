@@ -9,3 +9,6 @@ def nosotros(request):
 
 def galeria(request):
     return render(request, 'storefront/galeria.html')
+
+def cms(request):
+    return render(request, 'storefront/cms.html')
