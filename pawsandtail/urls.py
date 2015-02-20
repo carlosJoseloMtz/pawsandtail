@@ -16,6 +16,9 @@ urlpatterns = patterns('',
     url(r'^nosotros/$', views.nosotros),
     url(r'^galeria/$', views.galeria),
     url(r'^cms/$', views.cms),
+    url(r'^productos/$', views.productos),
+    url(r'^servicios/$', views.servicios),
+    url(r'^contacto/$', views.contacto),
 
     # add all needed request mapping here
 )

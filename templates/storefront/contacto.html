@@ -1,0 +1,31 @@
+{% extends 'storefront/base.html' %}
+{% block title %} Nosotros {% endblock title %}
+{% block anyheadimport %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/card.css"/>
+{% endblock anyheadimport %}
+    {% block content %}
+
+    <div class="col-lg-4">
+        <h1>Titulo</h1>
+        <div class="col-md-12">
+            <h2>Subtitulo</h2>
+            <p>xxxxxxxxxxxxxxxxxxxxx</p>
+            <p>xxxxxxxxxxxxxxxxxxxxx</p>
+            <p>xxxxxxxxxxxxxxxxxxxxx</p>
+
+            <p>xxxxxxxxxxxxxxxxxxxxx</p>
+            <p>xxxxxxxxxxxxxxxxxxxxx</p>
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <h1>Titulo</h1>
+         <input type="text" class="form-control" placeholder="Nombre"/>
+        <input type="text" class="form-control" placeholder="Email"/>
+        <input type="text" class="form-control" placeholder="Subject"/>
+         <textarea class="form-control" id="message-text" placeholder="Texto"></textarea>
+    </div>
+
+    {% endblock content %}
+{% block scriptimport %}
+{% endblock scriptimport %}

@@ -12,3 +12,12 @@ def galeria(request):
 
 def cms(request):
     return render(request, 'storefront/cms.html')
+
+def productos(request):
+    return render(request, 'storefront/productos.html')
+
+def servicios(request):
+    return render(request, 'storefront/servicios.html')
+
+def contacto(request):
+    return render(request, 'storefront/contacto.html')
